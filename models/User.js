@@ -20,15 +20,11 @@ let userSchema = new Schema({
     type: String,
     required: true,
   },
-  motdepasse: {
-    type: String,
-    required: true,
-  },
   isAdmin:{
     type:Boolean,
     default:false,
     required:true,
   }
-});
+},{timestamps:true});
 
 module.exports = User = mongoose.model("user", userSchema);

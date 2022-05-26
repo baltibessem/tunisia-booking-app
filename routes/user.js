@@ -3,10 +3,10 @@ const router = require("express").Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+
 // @desc register user
 // @ /api/users/register
 // @ post request
-
 router.post("/register", async (req, res) => {
   try {
     const { nom, prenom, email, motdepasse } = req.body;
@@ -42,7 +42,6 @@ router.post("/register", async (req, res) => {
 // @desc login user
 // @ /api/users/login
 // @ post request
-
 router.post("/login", async (req, res) => {
   try {
     const { email, motdepasse } = req.body;
