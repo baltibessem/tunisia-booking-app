@@ -21,4 +21,4 @@ connectDB();
 // 3-connecting the routes 
 
 app.use("/api/users", require("./routes/user"));
-
+app.use("/api/musees",require("./routes/museeRoute"))
