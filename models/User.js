@@ -20,10 +20,7 @@ let userSchema = new Schema({
     type: String,
     required: true,
   },
-  motdepasse: {
-    type: String,
-    required: true,
-  },
+
   isAdmin:{
     type:Boolean,
     default:false,
