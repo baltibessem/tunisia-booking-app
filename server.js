@@ -4,12 +4,13 @@ const express = require("express");
 const app = express();
 const connectDB =require("./config/connectDB")
 require("dotenv").config();
+const cors = require("cors")
 app.use(express.json());
 
 // 1- Creating the server
-
-const PORT = process.env.PORT || 5000;
-
+app.use(cors({origin:"http://localhost:3000"}))
+const PORT = process.env.PORT || 6000;
+ 
 app.listen(PORT, (err) => {
   if (err) throw err;
   console.log(`SERVER IS RUNNING ON PORT: ${PORT}`);
