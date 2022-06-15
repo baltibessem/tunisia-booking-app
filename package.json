@@ -1,5 +1,5 @@
 {
-  "name": "booking-app",
+  "name": "tunisia-booking-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,12 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
-    "mern": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mui/material": "^5.8.2",
     "bcrypt": "^5.0.1",
     "concurrently": "^7.2.1",
     "cors": "^2.8.5",
@@ -21,10 +20,11 @@
     "jquery": "^3.6.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.4",
-    "router": "^1.3.7"
+    "react-toastify": "^9.0.4",
+    "router": "^1.3.7",
+    "stripe": "^9.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
-  },
-  "proxy": "http://localhost:3000"
+  }
 }
